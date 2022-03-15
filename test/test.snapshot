@@ -124,6 +124,75 @@
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
           "groupIdentifier" : "c8f6de6d-fae9-304b-a710-2f5419987639",
+          "identifier" : "0f74bbef-5b20-33d4-a532-13103580b3ea",
+          "name" : "AvroReader",
+          "properties" : {
+            "schema-name" : "${schema.name}",
+            "cache-size" : "1000",
+            "schema-access-strategy" : "embedded-avro-schema",
+            "schema-text" : "${avro.schema}"
+          },
+          "propertyDescriptors" : {
+            "schema-branch" : {
+              "displayName" : "Schema Branch",
+              "identifiesControllerService" : false,
+              "name" : "schema-branch",
+              "sensitive" : false
+            },
+            "schema-name" : {
+              "displayName" : "Schema Name",
+              "identifiesControllerService" : false,
+              "name" : "schema-name",
+              "sensitive" : false
+            },
+            "cache-size" : {
+              "displayName" : "Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "cache-size",
+              "sensitive" : false
+            },
+            "schema-registry" : {
+              "displayName" : "Schema Registry",
+              "identifiesControllerService" : true,
+              "name" : "schema-registry",
+              "sensitive" : false
+            },
+            "schema-access-strategy" : {
+              "displayName" : "Schema Access Strategy",
+              "identifiesControllerService" : false,
+              "name" : "schema-access-strategy",
+              "sensitive" : false
+            },
+            "schema-version" : {
+              "displayName" : "Schema Version",
+              "identifiesControllerService" : false,
+              "name" : "schema-version",
+              "sensitive" : false
+            },
+            "schema-text" : {
+              "displayName" : "Schema Text",
+              "identifiesControllerService" : false,
+              "name" : "schema-text",
+              "sensitive" : false
+            }
+          },
+          "type" : "org.apache.nifi.avro.AvroReader"
+        }, {
+          "bundle" : {
+            "artifact" : "nifi-record-serialization-services-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.15.3"
+            },
+            "type" : "org.apache.nifi.serialization.RecordReaderFactory"
+          } ],
+          "groupIdentifier" : "c8f6de6d-fae9-304b-a710-2f5419987639",
           "identifier" : "6bb3c69a-ac31-399c-b2a7-5157d01de920",
           "name" : "AvroReader",
           "properties" : {
@@ -193,7 +262,9 @@
         "processGroups" : [ ],
         "processors" : [ ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "ololo" : "test"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { }
