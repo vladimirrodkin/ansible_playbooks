@@ -1,6 +1,6 @@
 flows:
-  7e3ada2c-d1a2-435a-a736-3159f8eeeb75: {ver: 2, file: test.snapshot, comments: ololo,
-    author: anonymous, created: 1647337933325, flowName: test, flowDesc: test}
+  7e3ada2c-d1a2-435a-a736-3159f8eeeb75: {ver: 3, file: test.snapshot, comments: new
+      changes, author: anonymous, created: 1647544725617, flowName: test, flowDesc: test}
   efafa736-a559-451a-8a78-893c17c85a31: {ver: 1, file: test2.snapshot, comments: test2,
     author: anonymous, created: 1647518167786, flowName: test2, flowDesc: test2}
 layoutVer: 1
