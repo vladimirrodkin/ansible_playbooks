@@ -9,10 +9,6 @@
           "identifier" : "5c5863cc-2147-39c8-b109-5a17fc548388",
           "name" : "DBCPConnectionPool"
         },
-        "db123184-4e21-384f-97cc-6e3991157f92" : {
-          "identifier" : "db123184-4e21-384f-97cc-6e3991157f92",
-          "name" : "CSVRecordSetWriter"
-        },
         "5bc575b6-7855-30eb-86c9-a4e596e12d45" : {
           "identifier" : "5bc575b6-7855-30eb-86c9-a4e596e12d45",
           "name" : "CSVReader"
@@ -29,80 +25,20 @@
           "destination" : {
             "comments" : "",
             "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "80aa9ca7-8b0c-3b53-881b-28adc119f5df",
-            "name" : "ConvertRecord",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "ffcbd8f6-502f-33c9-bb33-58109bd8db1a",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "31ee45ef-068a-3050-b4cb-1f9ad3a2be8a",
-            "name" : "GetFTP",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "98b35030-9f57-38cb-86dc-f9c32d7ef195",
-            "name" : "ReplaceText",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "b1f32b63-406f-3c48-97d7-f1b9e45d357c",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "80aa9ca7-8b0c-3b53-881b-28adc119f5df",
-            "name" : "ConvertRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
             "id" : "c14155d2-6548-340f-9831-c30133c0ada3",
             "name" : "PutDatabaseRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "7325996a-2da4-3229-8379-42b2f5cde5d3",
+          "identifier" : "0134e4e0-142c-3f2d-b332-61ddae17daac",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
+          "selectedRelationships" : [ "failure", "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
@@ -179,25 +115,25 @@
           "destination" : {
             "comments" : "",
             "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "8cc93633-7a1d-32ad-a637-075cbddf9c9a",
-            "name" : "LogMessage",
+            "id" : "76a4dbae-b62c-36b8-951c-7a7e536a8a1a",
+            "name" : "PutS3Object",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "367039fc-4591-3ab9-962a-3b5ffc0f9ff8",
+          "identifier" : "ca2f19ab-7116-3d5d-b5a7-8c8ce8063855",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "success" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "80aa9ca7-8b0c-3b53-881b-28adc119f5df",
-            "name" : "ConvertRecord",
+            "id" : "31ee45ef-068a-3050-b4cb-1f9ad3a2be8a",
+            "name" : "GetFTP",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -209,13 +145,13 @@
           "destination" : {
             "comments" : "",
             "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "76a4dbae-b62c-36b8-951c-7a7e536a8a1a",
-            "name" : "PutS3Object",
+            "id" : "98b35030-9f57-38cb-86dc-f9c32d7ef195",
+            "name" : "ReplaceText",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "ba28cc51-86ec-3079-8d9a-11b12b5119f5",
+          "identifier" : "35310cd2-e31f-313e-9fed-7bfcd24dcb02",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -226,8 +162,8 @@
           "source" : {
             "comments" : "",
             "groupId" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-            "id" : "80aa9ca7-8b0c-3b53-881b-28adc119f5df",
-            "name" : "ConvertRecord",
+            "id" : "31ee45ef-068a-3050-b4cb-1f9ad3a2be8a",
+            "name" : "GetFTP",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -242,8 +178,8 @@
         "name" : "CSV_to_PostgreSQL_S3",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -448.0,
-          "y" : -640.0
+          "x" : -424.0,
+          "y" : -680.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -263,8 +199,8 @@
           "name" : "GetFTP",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -184.0,
-            "y" : -872.0
+            "x" : -632.0,
+            "y" : -656.0
           },
           "properties" : {
             "Ignore Dotted Files" : "true",
@@ -475,8 +411,8 @@
           "name" : "PutS3Object",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 464.0,
-            "y" : -608.0
+            "x" : 0.0,
+            "y" : -664.0
           },
           "properties" : {
             "FullControl User List" : "${s3.permissions.full.users}",
@@ -759,88 +695,16 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "4e2c8310-4ca3-3034-b679-63dcb4982ab1",
-          "name" : "ReplaceTextWithMapping",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 440.0,
-            "y" : -840.0
-          },
-          "properties" : {
-            "Regular Expression" : "\\S+",
-            "Matching Group" : "0",
-            "Mapping File Refresh Interval" : "60s",
-            "Character Set" : "UTF-8",
-            "Maximum Buffer Size" : "1 MB"
-          },
-          "propertyDescriptors" : {
-            "Regular Expression" : {
-              "displayName" : "Regular Expression",
-              "identifiesControllerService" : false,
-              "name" : "Regular Expression",
-              "sensitive" : false
-            },
-            "Matching Group" : {
-              "displayName" : "Matching Group",
-              "identifiesControllerService" : false,
-              "name" : "Matching Group",
-              "sensitive" : false
-            },
-            "Mapping File Refresh Interval" : {
-              "displayName" : "Mapping File Refresh Interval",
-              "identifiesControllerService" : false,
-              "name" : "Mapping File Refresh Interval",
-              "sensitive" : false
-            },
-            "Mapping File" : {
-              "displayName" : "Mapping File",
-              "identifiesControllerService" : false,
-              "name" : "Mapping File",
-              "sensitive" : false
-            },
-            "Character Set" : {
-              "displayName" : "Character Set",
-              "identifiesControllerService" : false,
-              "name" : "Character Set",
-              "sensitive" : false
-            },
-            "Maximum Buffer Size" : {
-              "displayName" : "Maximum Buffer Size",
-              "identifiesControllerService" : false,
-              "name" : "Maximum Buffer Size",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.ReplaceTextWithMapping",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "failure" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
           "identifier" : "98b35030-9f57-38cb-86dc-f9c32d7ef195",
           "name" : "ReplaceText",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -184.0,
-            "y" : -400.0
+            "x" : -632.0,
+            "y" : -408.0
           },
           "properties" : {
-            "Regular Expression" : "good",
-            "Replacement Value" : "good_value",
+            "Regular Expression" : "#,good,name",
+            "Replacement Value" : "num_value,good_value,name_value",
             "Evaluation Mode" : "Line-by-Line",
             "Line-by-Line Evaluation Mode" : "All",
             "Character Set" : "UTF-8",
@@ -899,58 +763,6 @@
           "type" : "org.apache.nifi.processors.standard.ReplaceText",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "4b96aead-193b-3976-86f8-0564d6cab6f3",
-          "identifier" : "80aa9ca7-8b0c-3b53-881b-28adc119f5df",
-          "name" : "ConvertRecord",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -184.0,
-            "y" : -608.0
-          },
-          "properties" : {
-            "record-writer" : "db123184-4e21-384f-97cc-6e3991157f92",
-            "record-reader" : "5bc575b6-7855-30eb-86c9-a4e596e12d45",
-            "include-zero-record-flowfiles" : "true"
-          },
-          "propertyDescriptors" : {
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
-              "sensitive" : false
-            },
-            "include-zero-record-flowfiles" : {
-              "displayName" : "Include Zero Record FlowFiles",
-              "identifiesControllerService" : false,
-              "name" : "include-zero-record-flowfiles",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.ConvertRecord",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "success" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -967,11 +779,11 @@
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 472.0,
-            "y" : -192.0
+            "x" : 0.0,
+            "y" : -80.0
           },
           "properties" : {
-            "log-level" : "info",
+            "log-level" : "trace",
             "log-prefix" : "CSV_to_PostgreSQL insert failure"
           },
           "propertyDescriptors" : {
@@ -1018,8 +830,8 @@
           "name" : "PutDatabaseRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -184.0,
-            "y" : -192.0
+            "x" : -632.0,
+            "y" : -96.0
           },
           "properties" : {
             "put-db-record-allow-multiple-statements" : "false",
