@@ -700,7 +700,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : -632.0,
-            "y" : -408.0
+            "y" : -376.0
           },
           "properties" : {
             "Regular Expression" : "#,good,name",
