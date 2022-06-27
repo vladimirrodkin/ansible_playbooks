@@ -1,8 +1,8 @@
 flows:
   7e3ada2c-d1a2-435a-a736-3159f8eeeb75: {ver: 3, file: test.snapshot, comments: new
       changes, author: anonymous, created: 1647544725617, flowName: test, flowDesc: test}
-  0db441d3-ba0f-4690-b000-e257734fcfc1: {ver: 3, file: CSV_to_PostgreSQL_S3.snapshot,
-    comments: changes committed, author: anonymous, created: 1647956152948, flowName: CSV_to_PostgreSQL_S3,
+  0db441d3-ba0f-4690-b000-e257734fcfc1: {ver: 4, file: CSV_to_PostgreSQL_S3.snapshot,
+    comments: +parquet, author: anonymous, created: 1656342772825, flowName: CSV_to_PostgreSQL_S3,
     flowDesc: ''}
   efafa736-a559-451a-8a78-893c17c85a31: {ver: 1, file: test2.snapshot, comments: test2,
     author: anonymous, created: 1647518167786, flowName: test2, flowDesc: test2}
