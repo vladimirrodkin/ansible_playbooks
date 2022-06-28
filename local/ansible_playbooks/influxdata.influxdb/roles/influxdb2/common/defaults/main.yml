@@ -1,9 +1,0 @@
----
-
-apt_packages:
-  - gnupg2
-  - python3-pip
-
-pip_packages:
-  - cryptography
-  - pyOpenSSL

@@ -1,3 +1,0 @@
-- hosts: influxdb-hosts
-  roles:
-    - influxdb2
