@@ -1,0 +1,197 @@
+Index: ../ansible_playbooks/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ansible_playbooks/.idea/modules.xml b/../ansible_playbooks/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1656424614337)
++++ b/../ansible_playbooks/.idea/modules.xml	(date 1656424614337)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/ansible_playbooks.iml" filepath="$PROJECT_DIR$/.idea/ansible_playbooks.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../ansible_playbooks/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ansible_playbooks/.idea/workspace.xml b/../ansible_playbooks/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1656424633545)
++++ b/../ansible_playbooks/.idea/workspace.xml	(date 1656424633545)
+@@ -0,0 +1,99 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="fb34d4a6-f003-433e-8768-04a0cec2738d" name="Changes" comment="InfluxDB v2.2 + bucket structure + tasks deploy">
++      <change afterPath="$PROJECT_DIR$/.idea/ansible_playbooks.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Pull.Settings">
++    <option name="OPTIONS">
++      <set>
++        <option value="REBASE" />
++      </set>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2BCvqULO9MrYhV0xEwYyhB7rhUE" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++    <option name="showMembers" value="true" />
++  </component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/van/Documents/e-tag.pro/local/ansible_playbooks&quot;
++  }
++}</component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="fb34d4a6-f003-433e-8768-04a0cec2738d" name="Changes" comment="" />
++      <created>1656423072016</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1656423072016</updated>
++    </task>
++    <task id="LOCAL-00001" summary="InfluxDB v2.2 + bucket structure + tasks deploy">
++      <created>1656423273773</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1656423273773</updated>
++    </task>
++    <task id="LOCAL-00002" summary="InfluxDB v2.2 + bucket structure + tasks deploy">
++      <created>1656423319555</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1656423319555</updated>
++    </task>
++    <task id="LOCAL-00003" summary="InfluxDB v2.2 + bucket structure + tasks deploy">
++      <created>1656423350462</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1656423350462</updated>
++    </task>
++    <task id="LOCAL-00004" summary="InfluxDB v2.2 + bucket structure + tasks deploy">
++      <created>1656424287719</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1656424287719</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
++    <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="InfluxDB v2.2 + bucket structure + tasks deploy" />
++    <option name="LAST_COMMIT_MESSAGE" value="InfluxDB v2.2 + bucket structure + tasks deploy" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../ansible_playbooks/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ansible_playbooks/.idea/misc.xml b/../ansible_playbooks/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1656424614346)
++++ b/../ansible_playbooks/.idea/misc.xml	(date 1656424614346)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: ../ansible_playbooks/.idea/ansible_playbooks.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ansible_playbooks/.idea/ansible_playbooks.iml b/../ansible_playbooks/.idea/ansible_playbooks.iml
+new file mode 100644
+--- /dev/null	(date 1656424614341)
++++ b/../ansible_playbooks/.idea/ansible_playbooks.iml	(date 1656424614341)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../ansible_playbooks/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ansible_playbooks/.idea/vcs.xml b/../ansible_playbooks/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1656424614350)
++++ b/../ansible_playbooks/.idea/vcs.xml	(date 1656424614350)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../ansible_playbooks/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ansible_playbooks/.idea/inspectionProfiles/profiles_settings.xml b/../ansible_playbooks/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1656424614354)
++++ b/../ansible_playbooks/.idea/inspectionProfiles/profiles_settings.xml	(date 1656424614354)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
