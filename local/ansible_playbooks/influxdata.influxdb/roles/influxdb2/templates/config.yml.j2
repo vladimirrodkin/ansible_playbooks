@@ -1,0 +1,20 @@
+# Defining bind address for influxdb
+http-bind-address: ":8086"
+reporting-disabled: true
+flux-log-enabled: true
+#storage-compact-full-write-cold-duration: 00h30m0s
+storage-compact-throughput-burst: 500331648
+storage-max-concurrent-compactions: 0
+storage-series-id-set-cache-size: 100
+storage-cache-max-memory-size: 536870912
+storage-cache-snapshot-memory-size: 26214400
+storage-cache-snapshot-write-cold-duration: 5m0s
+storage-compact-full-write-cold-duration: 20m0s
+storage-retention-check-interval: 10m0s
+query-max-memory-bytes: 12884901888
+#query-memory-bytes: 6442450944
+query-concurrency: 10
+query-initial-memory-bytes: 1073741824
+query-queue-size: 100
+storage-tsm-use-madv-willneed: false
+no-tasks: false

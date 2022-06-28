@@ -1,0 +1,9 @@
+influxdb_tasks:
+  - AP_chain_downsample_1d_count
+  - AP_chain_downsample_1h_count
+  - ESL_dict_ap_chain
+  - ESL_dict_esl_chain
+  - ESL_downsample_chain_1d
+  - ESL_chain_downsample_1h_temp
+  - ESL_chain_downsample_1h_rfpower
+  - ESL_chain_downsample_1h_voltage

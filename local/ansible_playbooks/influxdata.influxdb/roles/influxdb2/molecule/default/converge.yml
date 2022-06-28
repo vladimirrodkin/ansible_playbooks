@@ -1,0 +1,17 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include common"
+      include_role:
+        name: "common"
+    - name: "Include influxdb_v2"
+      include_role:
+        name: "ndaal_ansible_role_influxdb2"
+    - name: Get InfluxDB version
+      shell: influxd version
+      register: influxdb_version_result
+    - name: Assert InfluxDB version
+      assert:
+        that: influxdb_version_result.stdout_lines[0] | regex_search('^InfluxDB v[\d.]+') != ''
+        msg: "Failure on InfluxDB installation"

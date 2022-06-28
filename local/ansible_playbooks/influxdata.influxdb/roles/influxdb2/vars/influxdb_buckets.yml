@@ -1,0 +1,13 @@
+influxdb_buckets:
+  - name: "{{ chain_name }}"
+    retention: 7d
+    shard_group_duration: 1h
+  - name: "{{ chain_name + '-ds-1h'}}"
+    retention: 30d
+    shard_group_duration: 1h
+  - name: "{{ chain_name + '-ds-1d'}}"
+    retention: 365d
+    shard_group_duration: 1d
+  - name: "{{ chain_name + '-dict'}}"
+    retention: 2d
+    shard_group_duration: 1h
